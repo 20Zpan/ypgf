@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>勇攀高峰揽星空</title>
+    <style>
+
+        body {
+            background: linear-gradient(45deg, #0a0a2e, #1a1a4f, #2d0a4a);
+            color: #e6e6fa;
+            font-family: 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .button-group {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 10px;
+            max-width: 100%;
+        }
+
+        .enter-button {
+            background: linear-gradient(45deg, #303091, #65209e);
+            color: white;
+            padding: 12px 18px;
+            border-radius: 40px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 500;
+            font-size: 1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(164, 87, 175, 0.284);
+            width: 72%;
+            text-align: center;
+        }
+
+        .enter-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(174, 116, 176, 0.421);
+            background: linear-gradient(45deg, #c059da, #8565c5ef);
+        }
+
+        .zoom {
+            transition: transform 0.3s;
+            display: inline-block;
+        }
+
+        .zoom:hover {
+            transform: scale(1.2);
+        }
+
+        .profile-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 1px solid #4b0082;
+        }
+
+        .progress-bar {
+            background: rgba(46, 9, 78, 0.7);
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 15px 0;
+        }
+
+        .progress {
+            background: linear-gradient(90deg, #9370db, #ba55d3);
+            height: 100%;
+            width: 50%;
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .progress::after {
+            content: "✦";
+            position: absolute;
+            right: -15px;
+            top: -5px;
+            color: #fff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="profile-card">
+        
+        <img src="1a.jpg" alt="头像" class="zoom" style="width:150px; height:150px; border-radius:50%; border: 3px solid #9370db; display:block; margin:0 auto;">
+       
+        <!-- 个人介绍🌌🔮🌠🎨🪐✦🌃🌆🌇🕋🌖☀️⭐🌟 -->
+        <h1 style="text-align:center; color: #ba55d3;">🔮 勇攀高峰~揽星空</h1>
+        <p style="text-align:center;">🌖 HTML学习中 | 🎨 CSS学习中 | 🌠 Python学习中</p >
+        
+        <hr style="border-color: #4b0082;">
+
+        <h3>🪐 星际技能</h3>
+        <p>python中print：</p >
+        <div class="progress-bar">
+            <div class="progress" style="width: 90%;"></div>
+        </div>
+        
+        <p>pyautogui捣乱：</p >
+        <div class="progress-bar">
+            <div class="progress" style="width: 75%;"></div>
+        </div>
+
+        <p>HTML排版：</p >
+        <div class="progress-bar">
+            <div class="progress" style="width: 20%;"></div>
+        </div>
+
+        <p>CSS色彩配色：</p >
+        <div class="progress-bar">
+            <div class="progress" style="width: 10%;"></div>
+        </div>
+
+        <p>JavaScript：</p >
+        <div class="progress-bar">
+            <div class="progress" style="width: 1%;"></div>
+        </div>
+
+        <p>bilibili阅读：</p >
+        <div class="progress-bar">
+            <div class="progress" style="width: 50%;"></div>
+        </div>
+
+        <p>DeepSeek交流：</p >
+        <div class="progress-bar">
+            <div class="progress" style="width: 85%;"></div>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <h3>🌃 链接跳转</h3>
+        <div class="button-group">
+            <a href="https://chat.deepseek.com/" target="_blank" class="enter-button">
+                DeepSeek
+            </a>
+            <a href="https://www.python.org/" target="_blank" class="enter-button">
+                Python
+            </a>
+            <a href="https://www.bilibili.com/" target="_blank" class="enter-button">
+                bilibili
+            </a>
+            <a href="https://kimi.moonshot.cn/" target="_blank" class="enter-button">
+                kimi
+            </a>
+            <a href="https://www.doubao.com/" target="_blank" class="enter-button">
+                豆包
+            </a>
+            <a href="https://www.icourse163.org/" target="_blank" class="enter-button">
+                MOOC
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
